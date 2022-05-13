@@ -13,7 +13,7 @@ interface SidebarProps {}
 
 const Sidebar: FunctionComponent<SidebarProps> = () => {
   return (
-    <div className="flex flex-col items-center justify-between w-20 min-h-screen py-10 bg-neutral">
+    <div className="flex flex-col items-center justify-between w-16 fixed min-h-screen py-10 bg-neutral">
       <div className="flex flex-col gap-32">
         <p className={`${styles.sidebarIconSize} font-bold`}>A.</p>
         <div className="flex flex-col gap-6">

@@ -2,10 +2,22 @@
   @apply text-2xl text-white;
 }
 
+.mainContentWidth {
+  width: calc(100% - 64px);
+}
+
 .headerIcon {
   @apply relative text-lg text-white btn hover:bg-secondary;
 }
 
 .headerIconBadge {
-  @apply absolute scale-50 top-2.5 right-3 bg-accent
+  @apply absolute scale-50 top-2.5 right-3 bg-accent;
+}
+
+.buttonPrimary {
+  @apply btn btn-primary normal-case pl-6 pr-6 min-h-[2.25rem] h-[2.25rem];
+}
+
+.buttonSecondary {
+  @apply btn btn-secondary normal-case pl-6 pr-6 min-h-[2.25rem] h-[2.25rem];
 }
