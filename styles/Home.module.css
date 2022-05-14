@@ -1,9 +1,13 @@
 .sidebarIconSize {
-  @apply text-2xl text-white;
+  @apply text-2xl text-white cursor-pointer hover:text-accent;
 }
 
 .mainContentWidth {
   width: calc(100% - 64px);
+}
+
+.containerCard {
+  @apply  p-4 bg-neutral rounded-2xl;
 }
 
 .headerIcon {

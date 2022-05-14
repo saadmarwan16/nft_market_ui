@@ -30,7 +30,7 @@ const Header: FunctionComponent<HeaderProps> = () => {
         <span className="gap-4 text-white normal-case btn hover:bg-secondary">
           <div className="avatar">
             <div className="w-8">
-              <Image src='/profile.jpg' layout="fill" alt="Profile" className="rounded-full" />
+              <Image src='/profiles/profile_me.jpg' layout="fill" alt="Profile" className="rounded-full" />
             </div>
           </div>
           <p>Marwan.S</p>
@@ -41,17 +41,3 @@ const Header: FunctionComponent<HeaderProps> = () => {
 };
 
 export default Header;
-
-{
-  /* <div className="input-group">
-                <button className="btn btn-primary">
-                  <BsSearch className="text-white" />
-                </button>
-                <input
-                  type="text"
-                  placeholder={`${<span>Good</span>} Search for transaction, item etc`}
-                  // placeholder="Search for transaction, item etc"
-                  className="w-full max-w-lg text-white bg-neutral input placeholder:text-white"
-                />
-              </div> */
-}

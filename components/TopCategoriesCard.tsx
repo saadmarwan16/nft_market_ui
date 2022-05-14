@@ -7,18 +7,18 @@ interface TopCategoriesCardProps {}
 
 const TopCategoriesCard: FunctionComponent<TopCategoriesCardProps> = () => {
   return (
-    <div className="w-1/3 h-72 p-4 bg-neutral rounded-xl flex flex-col gap-4">
+    <div className={`${styles.containerCard} w-1/3 h-72 flex flex-col gap-4`}>
       <div className="flex justify-between text-sm">
-        <h4 className="text-white font-semibold">Top Categories</h4>
+        <h4 className="font-semibold text-white">Top Categories</h4>
         <p className="cursor-pointer">View all</p>
       </div>
-      <div className="flex flex-col gap-3 justify-center overflow-auto pt-16">
-        {topCategories.map((topCategory) => (
+      <div className="flex flex-col justify-center gap-3 pt-16 pr-2 overflow-y-auto">
+        {topCategories.map((topCategory, index) => (
           <div
-            key={topCategory.id}
-            className="flex justify-between items-center"
+            key={index}
+            className="flex items-center justify-between"
           >
-            <div className="flex gap-2 items-center">
+            <div className="flex items-center gap-2">
               <small>{topCategory.rank}</small>
               <Avatar
                 width="w-8"

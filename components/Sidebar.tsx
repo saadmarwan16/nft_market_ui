@@ -13,11 +13,13 @@ interface SidebarProps {}
 
 const Sidebar: FunctionComponent<SidebarProps> = () => {
   return (
-    <div className="flex flex-col items-center justify-between w-16 fixed min-h-screen py-10 bg-neutral">
+    <div className="fixed flex flex-col items-center justify-between w-16 min-h-screen py-10 bg-neutral">
       <div className="flex flex-col gap-32">
         <p className={`${styles.sidebarIconSize} font-bold`}>A.</p>
         <div className="flex flex-col gap-6">
-          <MdDashboard className={styles.sidebarIconSize} />
+          <div className="w-full p-1 rounded-md bg-secondary">
+            <MdDashboard className={styles.sidebarIconSize} />
+          </div>
           <AiOutlineWallet className={styles.sidebarIconSize} />
           <AiOutlineShoppingCart className={styles.sidebarIconSize} />
           <IoDocumentTextOutline className={styles.sidebarIconSize} />
