@@ -6,7 +6,7 @@ interface StatisticsProps {}
 
 const Statistics: FunctionComponent<StatisticsProps> = () => {
   return (
-    <div className={`${styles.containerCard} flex flex-col gap-4`}>
+    <div className={`${styles.containerCard} hidden lg:flex flex-col gap-4`}>
       <div className="flex justify-between text-sm text-white">
         <p className="text-sm font-semibold text-white">Statistics</p>
         <p className="cursor-pointer">View All</p>

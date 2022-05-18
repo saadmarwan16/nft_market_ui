@@ -7,7 +7,7 @@ interface NotificationsProps {}
 
 const Notifications: FunctionComponent<NotificationsProps> = () => {
   return (
-    <div className={`${styles.containerCard} flex flex-col gap-[1.15rem]`}>
+    <div className={`${styles.containerCard} hidden lg:flex flex-col gap-[1.15rem]`}>
       <div className="flex justify-between text-sm text-white ">
         <p className="font-semibold">Notifications</p>
         <p className="cursor-pointer">View All</p>

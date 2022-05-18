@@ -5,7 +5,7 @@ interface FooterProps {}
 const Footer: FunctionComponent<FooterProps> = () => {
   return (
     <div className="flex flex-col items-center pt-10">
-      <p className="text-lg font-semibold text-white">
+      <p className="text-lg font-semibold text-center text-white">
         Made with ❤️ by{" "}
         <a
           href="https://github.com/saadmarwan16"
@@ -16,7 +16,7 @@ const Footer: FunctionComponent<FooterProps> = () => {
           Marwan
         </a>
       </p>
-      <p>
+      <p className="text-center">
         Design inspired by{" "}
         <a
           href="https://dribbble.com/shots/18224196-NFT-Market-Arts-UX-UI"

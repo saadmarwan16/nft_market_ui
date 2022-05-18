@@ -3,7 +3,13 @@
 }
 
 .mainContentWidth {
-  width: calc(100% - 64px);
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .mainContentWidth {
+    width: calc(100% - 64px);
+  }
 }
 
 .containerCard {

@@ -8,14 +8,15 @@ import {
 } from "react-icons/io5";
 import { BsFileBarGraph } from "react-icons/bs";
 import styles from "../styles/Home.module.css";
+import Logo from "./Logo";
 
 interface SidebarProps {}
 
 const Sidebar: FunctionComponent<SidebarProps> = () => {
   return (
-    <div className="fixed flex flex-col items-center justify-between w-16 min-h-screen py-10 bg-neutral">
+    <div className="fixed flex-col items-center justify-between hidden w-16 min-h-screen py-10 lg:flex bg-neutral">
       <div className="flex flex-col gap-32">
-        <p className={`${styles.sidebarIconSize} font-bold`}>A.</p>
+        <Logo />
         <div className="flex flex-col gap-6">
           <div className="w-full p-1 rounded-md bg-secondary">
             <MdDashboard className={styles.sidebarIconSize} />

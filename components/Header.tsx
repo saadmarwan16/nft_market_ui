@@ -3,17 +3,14 @@ import { AiOutlineWallet } from "react-icons/ai";
 import { RiMessage3Line, RiNotification3Line } from "react-icons/ri";
 import styles from "../styles/Home.module.css";
 import Image from "next/image";
+import Input from "./Input";
 
 interface HeaderProps {}
 
 const Header: FunctionComponent<HeaderProps> = () => {
   return (
-    <div className="flex justify-between">
-      <input
-        type="text"
-        placeholder="Search for transaction, item etc"
-        className="w-full max-w-lg text-white input bg-neutral placeholder:text-white"
-      />
+    <div className="justify-between hidden lg:flex">
+      <Input />
       <div className="flex gap-5">
         <span className="gap-3 text-white hover:bg-secondary btn bg-neutral">
           <AiOutlineWallet className="text-2xl" />
@@ -30,7 +27,12 @@ const Header: FunctionComponent<HeaderProps> = () => {
         <span className="gap-4 text-white normal-case btn hover:bg-secondary">
           <div className="avatar">
             <div className="w-8">
-              <Image src='/profiles/profile_me.jpg' layout="fill" alt="Profile" className="rounded-full" />
+              <Image
+                src="/profiles/profile_me.jpg"
+                layout="fill"
+                alt="Profile"
+                className="rounded-full"
+              />
             </div>
           </div>
           <p>Marwan.S</p>

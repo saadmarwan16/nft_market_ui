@@ -12,8 +12,8 @@ const SingleCollectionCard: FunctionComponent<
   SingleCollectionCardProps
 > = () => {
   return (
-    <div className={`${styles.containerCard} flex w-2/3 gap-6`}>
-      <div className="relative flex flex-col items-center w-1/2">
+    <div className={`${styles.containerCard} flex w-full md:w-2/3 lg:w-full xl:w-2/3 h-auto xl:h-72 flex-col lg:flex-row gap-6`}>
+      <div className="relative flex flex-col items-center w-full lg:w-1/2 aspect-square">
         <div className="w-full grow avatar">
           <Image
             src={singleTopCollection.collectionSrc}
@@ -63,7 +63,7 @@ const SingleCollectionCard: FunctionComponent<
             </div>
           </div>
         </div>
-        <div className="flex gap-4">
+        <div className="flex flex-col gap-4 sm:flex-row">
           <span className={`${styles.buttonSecondary} normal-case`}>
             View Artwork
           </span>
